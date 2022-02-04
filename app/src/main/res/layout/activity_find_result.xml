@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchResultActivity"
+    android:layout_gravity="center"
+
+    >
+    <EditText
+        android:textSize="28sp"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="varos"
+        android:id="@+id/varos_input"
+        android:inputType="text"/>
+    <EditText
+        android:inputType="text"
+        android:textSize="28sp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="orszag"
+        android:layout_below="@+id/varos_input"
+        android:id="@+id/orszag_input"/>
+    <EditText
+        android:inputType="number"
+        android:textSize="28sp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="lakosság"
+        android:layout_below="@+id/orszag_input"
+        android:id="@+id/lakossag_input"/>
+    <Button
+        android:textSize="28sp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lakossag_input"
+        android:id="@+id/Update"
+        android:text="Új felvétel"/>
+
+    <Button
+        android:id="@+id/Back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Update"
+        android:layout_centerHorizontal="true"
+        android:text="Vissza"
+        android:textSize="28sp" />
+
+
+</RelativeLayout>
